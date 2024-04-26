@@ -1,4 +1,5 @@
 import { faker } from "@faker-js/faker";
+import { storeProductData } from "../helpers/helpers.js";
 export const generateCakeData = () => {
     const generatedProductData = {
         product: "cake",
@@ -8,7 +9,7 @@ export const generateCakeData = () => {
         weight: faker.number.int({ min: 100, max: 200 }),
         price: faker.number.int({ min: 3, max: 8 }),
     };
-    //storeProductData(generatedProductData).catch(console.error);
+    storeProductData(generatedProductData).catch(console.error);
     return generatedProductData;
 };
 export const generateCookiesData = () => {
@@ -20,7 +21,7 @@ export const generateCookiesData = () => {
         weight: faker.number.int({ min: 100, max: 200 }),
         price: faker.number.int({ min: 3, max: 8 }),
     };
-    //storeProductData(generatedProductData).catch(console.error);
+    storeProductData(generatedProductData).catch(console.error);
     return generatedProductData;
 };
 export const generateBrowniesData = () => {
@@ -32,7 +33,7 @@ export const generateBrowniesData = () => {
         weight: faker.number.int({ min: 50, max: 100 }),
         price: faker.number.int({ min: 2, max: 5 }),
     };
-    //storeProductData(generatedProductData).catch(console.error);
+    storeProductData(generatedProductData).catch(console.error);
     return generatedProductData;
 };
 //# sourceMappingURL=productServices.js.map
